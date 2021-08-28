@@ -1,0 +1,8 @@
+# alias awsconfig='code ~/.aws'
+# alias sshconfig='code ~/.ssh'
+alias hostsedit='code /etc/hosts'
+# alias zshrc='code ~/.zshrc'
+# alias consolelog='code ~/work/consoleLog'
+alias firstcommit='git commit --allow-empty -m "first commit"'
+# alias dnsCheck='cat /etc/resolv.conf'
+alias dotfilesedit='code ~/dotfiles'
