@@ -12,3 +12,16 @@
 
 - anyenv（通ってないpath？）があるとエラーになる。
   - anyenvを入れたらまるっと消えた。
+
+### 設定の場所
+
+`zshenv > zprofile > zshrc > zlogin`
+
+- global
+  - `/etc/zshrc`
+  - `/etc/zprofile`
+- private: `~/dotfiles`
+
+### よく使うコマンド
+
+`echo $PATH | tr ':' '\n'`
