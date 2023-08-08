@@ -2,13 +2,35 @@
 
 わたくしのdotfilesです。
 
+## 構成
+
+```console
+dotfiles/
+├── .gitignore
+├── .zshrc  <- 基本設定
+├── README.md  <- これ
+└── zsh  <- `.zshrc` が読み込む
+    ├── alias.zsh  <- aliasのまとめ
+    └── path.zsh  <- pathはここに書く
+```
+
 ## 手順
 
-1. `dotfiles` を `git clone` する。
-2. `ln -sv ~/dotfiles/.zshrc ~/` でシンボリックリンクを作成。
-3. 読み込まれるようにする。
+### 1. git clone
+
+```console
+git clone git@github.com:suzuki84g/dotfiles.git ~/dotfiles
+```
+
+### 2. シンボリックリンクの作成
+
+```console
+ln -sv ~/dotfiles/.zshrc ~/
+```
 
 ## エラー関連
+
+### anyenv
 
 - anyenv（通ってないpath？）があるとエラーになる。
   - anyenvを入れたらまるっと消えた。
