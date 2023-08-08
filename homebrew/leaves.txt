@@ -1,0 +1,7 @@
+anyenv
+awscli
+cfn-lint
+git
+jq
+tree
+zsh

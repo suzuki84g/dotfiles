@@ -1,8 +1,6 @@
 # dotfiles
 
-わたくしのdotfilesです。
-
-## 構成
+## 概要
 
 ```console
 dotfiles/
@@ -12,6 +10,13 @@ dotfiles/
 └── zsh  <- `.zshrc` が読み込む
     ├── alias.zsh  <- aliasのまとめ
     └── path.zsh  <- pathはここに書く
+```
+
+## homebrew
+
+```console
+brew leaves > $SCRIPT_DIR/homebrew/leaves.txt
+brew list --cask -1 > $SCRIPT_DIR/homebrew/list-cask.txt
 ```
 
 ## 手順
