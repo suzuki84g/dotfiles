@@ -3,20 +3,22 @@
 ## 概要
 
 ```console
-dotfiles/
+% tree -a --dirsfirst --filelimit 10
+.
+├── .git  [14 entries exceeds filelimit, not opening dir]
+├── homebrew  # homebrewのバックアップ
+│   ├── .Brewfile
+│   ├── leaves.txt
+│   └── list-cask.txt
+├── zsh
+│   ├── alias.zsh  # aliasのまとめ
+│   └── path.zsh  # pathはここに書く
+├── .DS_Store
 ├── .gitignore
-├── .zshrc  <- 基本設定
-├── README.md  <- これ
-└── zsh  <- `.zshrc` が読み込む
-    ├── alias.zsh  <- aliasのまとめ
-    └── path.zsh  <- pathはここに書く
-```
+├── .zshrc  # 基本設定
+└── README.md  # これ
 
-## homebrew
-
-```console
-brew leaves > $SCRIPT_DIR/homebrew/leaves.txt
-brew list --cask -1 > $SCRIPT_DIR/homebrew/list-cask.txt
+4 directories, 9 files
 ```
 
 ## 手順
@@ -31,6 +33,26 @@ git clone git@github.com:suzuki84g/dotfiles.git ~/dotfiles
 
 ```console
 ln -sv ~/dotfiles/.zshrc ~/
+```
+
+## homebrew
+
+### 出力
+
+```console
+brew leaves > $SCRIPT_DIR/homebrew/leaves.txt
+brew list --cask -1 > $SCRIPT_DIR/homebrew/list-cask.txt
+```
+
+### バックアップ
+
+<https://docs.brew.sh/Manpage>
+
+```console
+# バックアップ作成
+brew bundle dump --file="$SCRIPT_DIR/homebrew/.Brewfile" --force
+# 復元
+brew bundle --file="$SCRIPT_DIR/homebrew/.Brewfile"
 ```
 
 ## エラー関連
