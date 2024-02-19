@@ -1,6 +1,5 @@
 amazon-chime
 arc
-authy
 coteditor
 cyberduck
 dbeaver-community
@@ -19,12 +18,10 @@ maccy
 masscode
 microsoft-edge
 microsoft-remote-desktop
-microsoft-teams
+notion
 postman
-runcat-plugins-manager
 session-manager-plugin
 slack
-thunderbird
 visual-studio-code
 warp
 zoom

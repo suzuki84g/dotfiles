@@ -1,9 +1,11 @@
 anyenv
 aws-amplify
 awscli
+bash
 cfn-lint
 gh
 git
 jq
+libpq
 tree
 zsh
