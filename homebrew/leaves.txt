@@ -1,11 +1,16 @@
 anyenv
 aws-amplify
+aws-sam-cli
 awscli
 bash
 cfn-lint
 gh
 git
+go-task
+iproute2mac
 jq
 libpq
+mackerelio/mackerel-agent/mkr
+telnet
 tree
 zsh

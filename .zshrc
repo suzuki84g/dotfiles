@@ -8,3 +8,13 @@ source $SCRIPT_DIR/zsh/path.zsh
 
 # anyenv
 eval "$(anyenv init -)"
+
+# locale
+export LANG=ja_JP.UTF-8
+export LC_ALL=ja_JP.UTF-8
+
+# Prompt
+PROMPT="%~ > "
+# RPROMPT="%T"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"

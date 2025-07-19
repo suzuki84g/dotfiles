@@ -74,3 +74,7 @@ brew bundle --file="$SCRIPT_DIR/homebrew/.Brewfile"
 ### よく使うコマンド
 
 `echo $PATH | tr ':' '\n'`
+
+## memo
+
+https://zenn.dev/akido_/articles/7c9638e164b847
